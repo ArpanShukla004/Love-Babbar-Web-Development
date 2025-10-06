@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SJCIT Academic Portal_files",
+		"liveServer.settings.port": 5501
+	}
+}

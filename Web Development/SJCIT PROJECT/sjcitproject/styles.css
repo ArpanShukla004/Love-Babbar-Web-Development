@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background: linear-gradient(180deg, #2c3e50 0%, #1a252f 100%);
+    color: white;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #3498db;
+    margin-bottom: 20px;
+}
+
+.logo h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.sidebar nav ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: rgba(255,255,255,0.1);
+}
+
+.nav-link:hover {
+    background: #3498db;
+    transform: translateX(10px);
+}
+
+.nav-link i {
+    margin-right: 10px;
+    width: 20px;
+    font-size: 1.2rem;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.gradient-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96C93D);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    animation: gradient 5s ease infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.subjects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.subject-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border-left: 5px solid;
+}
+
+.subject-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Subject-specific colors */
+.math { border-left-color: #FF6B6B; }
+.physics { border-left-color: #4ECDC4; }
+.ele { border-left-color: #45B7D1; }
+.psp { border-left-color: #96C93D; }
+.iot { border-left-color: #FF9F43; }
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 2px solid;
+    padding-bottom: 0.5rem;
+}
+
+.math h2 { border-bottom-color: #FF6B6B; }
+.physics h2 { border-bottom-color: #4ECDC4; }
+.ele h2 { border-bottom-color: #45B7D1; }
+.psp h2 { border-bottom-color: #96C93D; }
+.iot h2 { border-bottom-color: #FF9F43; }
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.drive-link {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.drive-link:hover {
+    background: #3498db;
+    color: white;
+    transform: translateX(5px);
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 70px;
+        padding: 10px;
+    }
+
+    .sidebar .logo h2 {
+        display: none;
+    }
+
+    .sidebar nav ul li a span {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 70px;
+        width: calc(100% - 70px);
+    }
+
+    .gradient-text {
+        font-size: 2rem;
+    }
+} 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        img{
+            margin: 1px;
+            border: 1px solid black;
+        }
+        /*RELATIVE POSITIONING 
+        .image1{
+            position: relative;
+            top: 350px;
+        }
+         ABSOLUTE POSITIONING
+        .image2{
+            position: absolute;
+            top: 350px;
+            right: 20px;
+        }      */
+
+        .container{
+            position: relative;
+            height: 8000px;
+            background-color: azure;
+        }
+
+
+        .image4{
+            position: fixed;
+        }
+        
+        .image3{
+            position: sticky;
+            right: 50px;
+            top: 100px;
+
+        }
+
+        .box{
+            background-color: aquamarine;
+            height: 5000px;
+        }
+    </style>
+
+
+</head>
+
+
+
+<body>
+    <div class="container">
+
+    <img src="1.jpeg" alt="Photo1"
+    height="300px"
+    width="300px"
+    class="image1">
+
+    <img src="2.jpeg" alt="Photo2"
+    height="300px"
+    width="300px"
+    class="image2">
+    
+    <img src="3.jpeg" alt="Photo3"
+    height="300px"
+    width="300px"
+    class="image3">
+
+    <img src="30.jpeg" alt="Photo4"
+    height="300px"
+    width="300px"
+    class="image4">
+
+</div>
+
+<div class="box"></div>
+
+
+
+    
+</body>
+
+</html>
